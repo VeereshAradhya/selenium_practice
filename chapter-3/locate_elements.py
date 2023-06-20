@@ -97,8 +97,5 @@ class TestLocators(unittest.TestCase):
         webdriver_wait.until(EC.text_to_be_present_in_element((By.CLASS_NAME, "screen"), "10"))
 
 
-
-
-
 if __name__ == '__main__':
     unittest.main()

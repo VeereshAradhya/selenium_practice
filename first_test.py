@@ -18,12 +18,12 @@ class TestSelenium(unittest.TestCase):
     def tearDown(self) -> None:
         self.driver.quit()
 
-    # def test_first(self):
-    #     suturl = "https://bonigarcia.dev/selenium-webdriver-java/"
-    #     self.driver.get(suturl)
-    #     title = self.driver.title
-    #     self.assertEquals(title, "Hands-On Selenium WebDriver with Java")
-    #     self.driver.find_element()
+    def test_first(self):
+        suturl = "https://bonigarcia.dev/selenium-webdriver-java/"
+        self.driver.get(suturl)
+        title = self.driver.title
+        self.assertEquals(title, "Hands-On Selenium WebDriver with Java")
+        self.driver.find_element()
 
     def test_by_tagname(self):
         suturl = "https://bonigarcia.dev/selenium-webdriver-java/web-form.html"
